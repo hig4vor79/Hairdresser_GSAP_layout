@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kupavykh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="logo">
+          <img src="/images/logo.svg" alt="" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__inner">
+            <li class="nav__item">
+              <a href="/" class="nav__link">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Про мене</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="/portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+380 000 000 00" class="tel">+380 000 000 00</a>
+        <button class="menu">
+          <svg width="40" height="40" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            ></path>
+            <path class="line line2" d="M 20,50 H 80"></path>
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="burger">
+        <div class="burger__inner">
+          <nav class="nav">
+            <ul class="nav__inner">
+              <li class="nav__item">
+                <a href="/" class="nav__link">Головна</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Про мене</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Послуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="/portfolio.html" class="nav__link">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+380 000 000 00" class="tel">+380 000 000 00</a>
+        </div>
+      </div>
+    </header>
+    <div class="overlay">
+      <div class="modal">
+        <h3 class="modal__title">Контактна форма для запису</h3>
+        <p class="modal__text">
+          Залиште свої контактні дані, і я зв'яжуся з вами для уточнення часу та
+          деталей вашого візиту.
+        </p>
+        <form action="#">
+          <input type="text" class="formBlock__input" placeholder="Ім’я" />
+          <input
+            type="tel"
+            class="formBlock__input"
+            placeholder="Номер телефону"
+          />
+          <textarea
+            cols="30"
+            rows="10"
+            class="formBlock__input"
+            placeholder="Повідомлення"
+          ></textarea>
+          <button class="blackBtn formBlockBtn">Записатись</button>
+        </form>
+      </div>
+    </div>
+    <main class="main portfolio-page">
+      <section class="gallery">
+        <div class="sidebar">
+          <h2>portfolio</h2>
+          <div class="sidebar__bottom-counter">
+            <p class="current">01</p>
+            <p>/</p>
+            <p class="all">06</p>
+          </div>
+        </div>
+        <div class="gallery__wrap swiper-wrapper">
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-1.png" alt="" />
+          </a>
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-2.png" alt="" />
+          </a>
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-3.png" alt="" />
+          </a>
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-4.png" alt="" />
+          </a>
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-5.png" alt="" />
+          </a>
+          <a href="#" class="gallery__item swiper-slide">
+            <img src="images/portfolio-6.png" alt="" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" class="footer__grey">Політика конфіденційності</a>
+      <p class="footer__grey">©2023 Всі права захищені. KUPAVYKH</p>
+      <a href="#" class="footer__grey"
+        >Розроблено компанією <img src="images/mkey.png" alt=""
+      /></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
